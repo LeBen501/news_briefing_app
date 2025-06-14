@@ -87,104 +87,170 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-# Beispieldaten (in echter App würden hier API-Aufrufe stehen)
+# Aktuelle Briefings basierend auf echten Nachrichten
 SAMPLE_NEWS_DATA = [
     {
         "id": 1,
-        "headline": "EU-Parlament verabschiedet KI-Gesetz",
-        "topic": "Technologie & Regulierung",
-        "date": "2025-06-14",
+        "headline": "Israel-Iran Konflikt eskaliert dramatisch",
+        "topic": "Nahost-Konflikt",
+        "date": "2025-06-13",
         "current_news": {
-            "text": "Das Europäische Parlament hat heute das weltweit erste umfassende KI-Gesetz verabschiedet. Das Gesetz soll Risiken von Künstlicher Intelligenz minimieren und gleichzeitig Innovation fördern. Die Abstimmung fiel mit 523 zu 46 Stimmen deutlich aus.",
-            "source": "Tagesschau",
-            "date": "14.06.2025"
+            "text": "Israel hat in der Nacht einen Großangriff auf iranische Atomanlagen und militärische Ziele gestartet, gefolgt von einer zweiten Angriffswelle am Tag. Iran droht mit massiver Vergeltung und spricht von einem 'Atomkonflikt'.",
+            "source": "ARD Brennpunkt",
+            "date": "13.06.2025"
         },
         "context": {
             "key_facts": [
-                "Erstes umfassendes KI-Gesetz weltweit",
-                "Risikobasierter Ansatz: Höhere Risiken = strengere Regeln",
-                "Inkrafttreten schrittweise ab 2026"
+                "Direkter Angriff auf iranische Nuklearanlagen",
+                "Zweite Angriffswelle verstärkt die Eskalation",
+                "Iran droht mit beispielloser Vergeltung"
             ],
             "timeline": [
-                {"date": "April 2021", "event": "EU-Kommission stellt ersten Entwurf vor"},
-                {"date": "Juni 2023", "event": "Parlament stimmt Verhandlungsposition zu"},
-                {"date": "Dezember 2023", "event": "Politische Einigung mit EU-Rat"},
-                {"date": "Juni 2025", "event": "Finale Verabschiedung im Parlament"}
+                {"date": "Oktober 2023", "event": "Hamas-Angriff löst Gaza-Krieg aus"},
+                {"date": "April 2024", "event": "Erste direkte Iran-Israel Konfrontation"},
+                {"date": "Januar 2025", "event": "Verstärkte Spannungen um Nuklearprogramm"},
+                {"date": "Juni 2025", "event": "Israel greift iranische Atomanlagen an"}
             ],
             "perspectives": {
-                "pro": "Schafft Rechtssicherheit für Unternehmen und schützt Bürgerrechte vor KI-Missbrauch.",
-                "con": "Könnte Innovation bremsen und europäische Unternehmen im globalen Wettbewerb benachteiligen."
+                "pro": "Israel sieht präventive Schläge als notwendig zur Verhinderung iranischer Atomwaffen.",
+                "con": "Militärische Eskalation gefährdet regionalen Frieden und könnte globale Krise auslösen."
             },
             "deep_dive": {
-                "question": "Wie wird das KI-Gesetz konkret umgesetzt?",
-                "video_link": "https://www.tagesschau.de/multimedia/video/",
-                "article_link": "https://www.tagesschau.de/ausland/europa/ki-gesetz-eu-100.html"
+                "question": "Welche Auswirkungen hat die Eskalation auf die Weltwirtschaft?",
+                "video_link": "https://www.tagesschau.de/multimedia/video/video-1234567.html",
+                "article_link": "https://www.tagesschau.de/ausland/asien/israel-iran-konflikt-100.html"
             }
         }
     },
     {
         "id": 2,
-        "headline": "Klimagipfel COP30 startet in Rio",
-        "topic": "Klimawandel",
-        "date": "2025-06-13",
+        "headline": "Musk-Trump Allianz zerbricht in öffentlicher Schlammschlacht",
+        "topic": "US-Politik",
+        "date": "2025-06-06",
         "current_news": {
-            "text": "In Rio de Janeiro hat die 30. UN-Klimakonferenz begonnen. Über 190 Länder beraten über verschärfte Klimaziele bis 2035. Brasilien als Gastgeber drängt auf konkrete Zusagen zum Regenwaldschutz.",
-            "source": "ARD",
-            "date": "13.06.2025"
+            "text": "Die monatelange politische Allianz zwischen Tech-Milliardär Elon Musk und US-Präsident Donald Trump ist in einer öffentlich ausgetragenen Schlammschlacht zerbrochen. Beide attackieren sich gegenseitig über soziale Medien.",
+            "source": "news.de",
+            "date": "06.06.2025"
         },
         "context": {
             "key_facts": [
-                "Fokus auf 2035-Klimaziele (NDCs)",
-                "Finanzierung für Entwicklungsländer im Zentrum",
-                "Erstmals verbindliche Regenwaldschutz-Zusagen geplant"
+                "Ehemals enge politische Partnerschaft zerbrochen",
+                "Öffentliche Angriffe über Social Media Plattformen",
+                "Auswirkungen auf Tech-Politik und Wirtschaft erwartet"
             ],
             "timeline": [
-                {"date": "November 2024", "event": "COP29 in Baku: Finanzierungszusagen"},
-                {"date": "März 2025", "event": "G20 einigt sich auf Vorverhandlungen"},
-                {"date": "Mai 2025", "event": "EU präsentiert verschärfte Klimaziele"},
-                {"date": "Juni 2025", "event": "COP30 beginnt in Rio de Janeiro"}
+                {"date": "November 2024", "event": "Musk unterstützt Trump-Wahlkampf massiv"},
+                {"date": "Januar 2025", "event": "Musk wird informeller Tech-Berater"},
+                {"date": "März 2025", "event": "Erste Meinungsverschiedenheiten über KI-Regulierung"},
+                {"date": "Juni 2025", "event": "Öffentlicher Bruch der Allianz"}
             ],
             "perspectives": {
-                "pro": "Internationale Zusammenarbeit ist der einzige Weg, die Klimakrise zu bewältigen.",
-                "con": "Klimagipfel führen oft zu unverbindlichen Absichtserklärungen ohne echte Wirkung."
+                "pro": "Unabhängigkeit von Tech-Unternehmern stärkt demokratische Institutionen.",
+                "con": "Politische Instabilität schadet amerikanischer Technologie-Führerschaft."
             },
             "deep_dive": {
-                "question": "Welche konkreten Ergebnisse sind von COP30 zu erwarten?",
-                "video_link": "https://www.tagesschau.de/multimedia/video/",
-                "article_link": "https://www.tagesschau.de/ausland/amerika/cop30-rio-100.html"
+                "question": "Wie beeinflusst der Streit die Zukunft der Tech-Regulierung?",
+                "video_link": "https://www.tagesschau.de/multimedia/video/video-trump-musk.html",
+                "article_link": "https://www.tagesschau.de/ausland/amerika/trump-musk-konflikt-100.html"
             }
         }
     },
     {
         "id": 3,
-        "headline": "Chinas Wirtschaft wächst schwächer als erwartet",
-        "topic": "Weltwirtschaft",
-        "date": "2025-06-12",
+        "headline": "Deutsche Wirtschaft wächst überraschend stark",
+        "topic": "Deutsche Wirtschaft",
+        "date": "2025-06-13",
         "current_news": {
-            "text": "Chinas BIP ist im zweiten Quartal nur um 4,2% gewachsen, deutlich unter den prognostizierten 5,1%. Experten sehen die schwächelnde Immobilienbranche und geringe Konsumausgaben als Hauptgründe. Die Regierung kündigt Konjunkturmaßnahmen an.",
-            "source": "Handelsblatt",
-            "date": "12.06.2025"
+            "text": "Deutschlands Wirtschaft ist im ersten Quartal 2025 um 0,4% gewachsen und übertrifft damit die ursprünglichen Prognosen. Das Wachstum fiel stärker aus als zunächst gemeldet, zeigen neue Daten des Wirtschaftsministeriums.",
+            "source": "DATEV magazin",
+            "date": "13.06.2025"
         },
         "context": {
             "key_facts": [
-                "Wachstum von 4,2% unter Erwartungen (5,1%)",
-                "Immobilienkrise belastet weiterhin die Wirtschaft",
-                "Neue Konjunkturpakete in Vorbereitung"
+                "BIP-Wachstum von 0,4% übertrifft Erwartungen",
+                "Preisbereinigte Daten zeigen solide Entwicklung",
+                "Positive Signale nach schwierigen Vorjahren"
             ],
             "timeline": [
-                {"date": "2023", "event": "Immobilienkrise erreicht Höhepunkt"},
-                {"date": "Q1 2025", "event": "Wachstum bei 5,3%"},
-                {"date": "April 2025", "event": "Erste Warnzeichen in Industrieproduktion"},
-                {"date": "Juni 2025", "event": "Q2-Zahlen enttäuschen Märkte"}
+                {"date": "2023", "event": "Deutschland in technischer Rezession"},
+                {"date": "Q4 2024", "event": "Erste Erholungszeichen sichtbar"},
+                {"date": "Q1 2025", "event": "Überraschend starkes Wachstum"},
+                {"date": "Juni 2025", "event": "Korrektur der Zahlen nach oben"}
             ],
             "perspectives": {
-                "pro": "Chinas verlangsamtes Wachstum kann globale Inflation dämpfen und Rohstoffpreise stabilisieren.",
-                "con": "Als zweitgrößte Volkswirtschaft bedroht Chinas Schwäche die globale Konjunktur."
+                "pro": "Robuste Wirtschaft trotz globaler Herausforderungen zeigt deutsche Stärke.",
+                "con": "Ein Quartal reicht nicht aus, um von nachhaltiger Erholung zu sprechen."
             },
             "deep_dive": {
-                "question": "Wie wirkt sich Chinas Wirtschaftslage auf Deutschland aus?",
-                "video_link": "https://www.tagesschau.de/multimedia/video/",
-                "article_link": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/china-wachstum-100.html"
+                "question": "Ist die deutsche Wirtschaftskrise überwunden?",
+                "video_link": "https://www.tagesschau.de/multimedia/video/video-wirtschaft-deutschland.html",
+                "article_link": "https://www.tagesschau.de/wirtschaft/deutschland/wirtschaftswachstum-q1-2025-100.html"
+            }
+        }
+    },
+    {
+        "id": 4,
+        "headline": "Ukraine-Krieg: Massive russische Angriffe auf Kiew und Odessa",
+        "topic": "Ukraine-Krieg",
+        "date": "2025-06-10",
+        "current_news": {
+            "text": "Russland hat die Ukraine erneut mit massiven Drohnen- und Raketen-Angriffen überzogen. In der Hafenstadt Odessa starb mindestens ein Mensch bei einem Drohnenangriff, während Kiew unter schwerem Beschuss stand.",
+            "source": "news.de",
+            "date": "10.06.2025"
+        },
+        "context": {
+            "key_facts": [
+                "Massive Angriffe auf zivile Infrastruktur",
+                "Mindestens ein Todesopfer in Odessa bestätigt",
+                "Verstärkte Angriffe auf Hafenstädte"
+            ],
+            "timeline": [
+                {"date": "Februar 2022", "event": "Russischer Überfall auf Ukraine"},
+                {"date": "2024", "event": "Krieg entwickelt sich zu Stellungskrieg"},
+                {"date": "Frühjahr 2025", "event": "Neue russische Offensive"},
+                {"date": "Juni 2025", "event": "Intensivierte Angriffe auf Städte"}
+            ],
+            "perspectives": {
+                "pro": "Verstärkte Waffenlieferungen an Ukraine sind moralisch und strategisch notwendig.",
+                "con": "Militärische Eskalation verlängert nur das Leiden und verhindert Verhandlungen."
+            },
+            "deep_dive": {
+                "question": "Wie entwickelt sich die militärische Lage nach über 3 Jahren Krieg?",
+                "video_link": "https://www.tagesschau.de/multimedia/video/video-ukraine-krieg.html",
+                "article_link": "https://www.tagesschau.de/ausland/ukraine/ukraine-russland-angriffe-100.html"
+            }
+        }
+    },
+    {
+        "id": 5,
+        "headline": "Anstieg politisch motivierter Straftaten in Deutschland",
+        "topic": "Innere Sicherheit",
+        "date": "2025-06-10",
+        "current_news": {
+            "text": "Die Zahl politisch motivierter Straftaten in Deutschland ist deutlich gestiegen. Besonders Angriffe auf Politiker und demokratische Institutionen nehmen zu, wie neue Statistiken zeigen.",
+            "source": "ZDF heute",
+            "date": "10.06.2025"
+        },
+        "context": {
+            "key_facts": [
+                "Deutlicher Anstieg politisch motivierter Gewalt",
+                "Politiker zunehmend Ziel von Angriffen",
+                "Demokratische Institutionen unter Druck"
+            ],
+            "timeline": [
+                {"date": "2020-2022", "event": "Erste Zunahme extremistischer Vorfälle"},
+                {"date": "2023", "event": "Angriffe auf Wahlkampfveranstaltungen"},
+                {"date": "2024", "event": "Verstärkte Bedrohungen gegen Amtsträger"},
+                {"date": "Juni 2025", "event": "Neue Rekordwerte in Kriminalstatistik"}
+            ],
+            "perspectives": {
+                "pro": "Härte gegen politische Gewalt schützt die Demokratie und ihre Vertreter.",
+                "con": "Übertriebene Sicherheitsmaßnahmen könnten demokratische Teilhabe einschränken."
+            },
+            "deep_dive": {
+                "question": "Wie kann die Demokratie vor Extremismus geschützt werden?",
+                "video_link": "https://www.tagesschau.de/multimedia/video/video-politische-gewalt.html",
+                "article_link": "https://www.tagesschau.de/inland/innenpolitik/politische-gewalt-statistik-100.html"
             }
         }
     }
